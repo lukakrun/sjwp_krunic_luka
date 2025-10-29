@@ -1,0 +1,30 @@
+
+/*klase selektori, može biti više istih klasa*/
+.treci{
+
+    color:green;
+}
+
+
+h2, p{
+
+color:blueviolet;
+
+
+}
+
+#naslov {
+    color:chocolate;
+}
+
+
+*{
+    background-color:azure;
+}
+
+
+p[draggable="true"]{
+    background-color:antiquewhite;
+}
+
+
