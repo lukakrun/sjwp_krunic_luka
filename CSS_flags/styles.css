@@ -1,0 +1,74 @@
+.zvjezda{
+    width:100px;
+    height:100px;
+    background: gold;
+    position:absolute;
+    top:100px;
+    left:170px;
+    clip-path:polygon(
+50% 0%,
+61% 35%,
+98% 35%,
+68% 57%,
+79% 91%,
+50% 70%,
+21% 91%,
+32% 57%,
+2% 35%,
+39% 35%
+    )
+}
+.crvena{
+
+    width:150px;
+    height:300px;
+    background-color: red;
+    left:150px;
+    position: absolute;
+    
+}
+.zuta{
+    width:150px;
+    height:300px;
+    background: gold;
+    left:300px;
+    position:absolute;
+}
+.zelena{
+  width:150px;
+    height:300px;
+    background: green;
+    position:absolute;  
+}
+.glavni{
+    position:relative;
+}
+.glavni1{
+    top:300px;
+       width:500px;
+    height:300px;
+    background-color: red;
+    z-index: 0;
+    position:relative;
+}
+.krug{
+      width:250px;
+    height:350px;
+    border-radius: 50%;
+    background-color:white;
+    position: absolute;
+    left:90px;
+    top:70px;
+z-index: 1;
+    
+}
+.krug{
+
+    width:200px;
+    height:200px;
+    background-color: red;
+    position:absolute;
+    left:90px;
+    top:70px;
+    z-index: 2;
+}
