@@ -46,11 +46,13 @@ p{
     position: absolute;
     margin-left: 220px;
     margin-top: 210px;
+    color:lightblue;
 }
 .p5{
     position: absolute;
     margin-left: 320px;
     margin-top: 210px;
+     color:rgb(189, 29, 189);
 }
 
 .border{
