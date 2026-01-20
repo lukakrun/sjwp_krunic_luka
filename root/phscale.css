@@ -1,0 +1,142 @@
+.siva{
+    position: absolute;
+width: 1270px;
+height: 70px;
+margin-left: 10px;
+margin-top: 30px;
+background-color: rgb(172, 172, 172);
+}
+
+.prvi {
+  background-color: rgb(53, 122, 175);
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+margin-top: 110px;
+position:relative;
+}
+
+.drugi {
+  background-color: rgb(54, 134, 185);
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+    
+position:relative;   
+}
+
+.treci{
+  background-color: #3293c3;  
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+   
+position:relative;
+}
+
+.cetvrti {
+  background-color: #469fcb; 
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+  
+position:relative;     
+}
+
+.peti {
+  background-color: #5fadd2;  
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+    
+position:relative;
+}
+
+.sesti {
+  background-color: #75bada; 
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+   
+position:relative;  
+}
+
+.sedmi {
+  background-color: #8dc4df;   
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;     
+}
+
+.osmi {
+  background-color: #23ab7e;  
+  height: 35px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;   
+}
+
+.deveti {
+  background-color: #e7abc1;   
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;      
+}
+
+.deseti {
+  background-color: #e799b5;    
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;   
+}
+.jedanaesti {
+ background-color: #e587a7;
+ height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;  
+}
+
+.dvanaesti {
+  background-color: #e2749a; 
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;    
+}
+
+.trinaesti {
+  background-color: #e0658a;  
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+  
+position:relative;   
+}
+
+.cetrnaesti {
+  background-color: #db5580; 
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;     
+}
+
+.petnaesti {
+  background-color: #da3d75;  
+  height: 20px;
+  width: 1270px;
+  margin-left: 10px;
+
+position:relative;       
+}
