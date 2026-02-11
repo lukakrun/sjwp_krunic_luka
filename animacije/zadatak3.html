@@ -4,37 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-<style>
+    <style>
 
 div{
+width:200px;
 height: 200px;
-width: 200px;
 box-sizing: border-box;
-padding:80px;
-border-radius: 50%;
-
-
-
-animation-name: mrtn;
+padding: 80px;
+background-color: lightblue;
+animation-name: NJAC;
 animation-iteration-count: infinite;
-animation-timing-function: ease;
-background-color: red;
+animation-direction: alternate;
 animation-duration: 4s;
-animation-iteration-count: infinite;
-
 
 }
+@keyframes NJAC{
+25%{
 
-@keyframes mrtn {
-
-    25%{
-        background-color: green;
-    }
-    75%{
-        background-color: blue;
-    }
-
+}
+100%{
+    transform: translateX(150px);
+}
     
 }
 
@@ -42,13 +32,14 @@ animation-iteration-count: infinite;
 
 
 
-</style>
 
+
+
+    </style>
 </head>
 <body>
 
-
-<div>njac</div>
+<div>NJAC</div>
 
 
     

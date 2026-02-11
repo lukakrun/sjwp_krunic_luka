@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 <style>
-
 div{
 height: 200px;
 width: 200px;
 box-sizing: border-box;
-padding:80px;
-border-radius: 50%;
-
-
-
-animation-name: mrtn;
+padding: 80px;
+margin-left: 350px;
+margin-top:350px;
+animation-name: hover;
 animation-iteration-count: infinite;
+animation-duration:3s;
+background-color: orangered;
 animation-timing-function: ease;
-background-color: red;
-animation-duration: 4s;
 animation-iteration-count: infinite;
+animation-direction: alternate;
+transition:0.5s ;
+
+
+
+
+}
+@keyframes hover{
+}
+div:hover{
+transform: scale(1.4)   ;
+background-color:red;
+
 
 
 }
 
-@keyframes mrtn {
 
-    25%{
-        background-color: green;
-    }
-    75%{
-        background-color: blue;
-    }
-
-    
-}
 
 
 
@@ -44,13 +43,9 @@ animation-iteration-count: infinite;
 
 </style>
 
+
 </head>
 <body>
-
-
-<div>njac</div>
-
-
-    
+    <div></div>
 </body>
 </html>
