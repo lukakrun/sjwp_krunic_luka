@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Layout</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+/* okvir oko grid-a */
+.container{
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #eee;
+    border: 1px solid #ccc;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* grid elementi */
+.box{
+    background: #4a4a4a;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+</style>
+</head>
+
+<body>
+<h1 align="center">1. Zadatak</h1>
+<div class="container">
+    <div class="box">D</div>
+    <div class="box">A</div>
+    <div class="box">F</div>
+    <div class="box">E</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+</div>
+<h1 align="center">2. Zadatak</h1>
+
+</body>
+</html>

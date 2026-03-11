@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Zadatak 3</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f5f5f5;
+}
+
+.container{
+    width:900px;
+    margin:50px auto;
+    padding:20px;
+    background:#eee;
+    border:1px solid #ccc;
+
+    display:grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px;
+
+    grid-template-areas:
+        "A A B E"
+        "C D B E";
+
+    gap:20px;
+}
+
+.box{
+    background:#4a4a4a;
+    color:white;
+    font-size:28px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+}
+
+.a{ grid-area:A; }
+.b{ grid-area:B; }
+.c{ grid-area:C; }
+.d{ grid-area:D; }
+.e{grid-area:E;}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+</div>
+
+</body>
+</html>
