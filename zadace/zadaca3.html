@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilmoviSerije</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #e2e2e2;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color:#64a2d8;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* NAV */
+nav label {
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav label:hover {
+    color: #00bfff;
+}
+
+/* HIDE RADIO */
+input[type="radio"] {
+    display: none;
+}
+
+/* SECTIONS */
+.section {
+    display: none;
+    padding: 30px;
+}
+
+/* SHOW ACTIVE */
+#filmovi:checked ~ .content #filmovi-section,
+#serije:checked ~ .content #serije-section,
+#dokumentarci:checked ~ .content #dokumentarci-section {
+    display: block;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background: #6b6867;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed #2e5b87;
+    text-align: center;
+    height:500px;
+    
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- RADIO BUTTONS -->
+<input type="radio" name="tab" id="filmovi" checked>
+<input type="radio" name="tab" id="serije">
+<input type="radio" name="tab" id="dokumentarci">
+
+<header>
+    <div class="logo">FilmoviSerije</div>
+    <nav>
+        <label for="filmovi">FILMOVI</label>
+        <label for="serije">SERIJE</label>
+        <label for="dokumentarci">DOKUMENTARCI</label>
+    </nav>
+</header>
+
+<div class="content">
+
+<!-- FILMOVI -->
+<div id="filmovi-section" class="section">
+<div class="grid">
+<!-- 20 filmova -->
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 1</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 2</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 3</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 4</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 5</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 6</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 7</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 8</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 9</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 10</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 11</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 12</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 13</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 14</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 15</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 16</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 17</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 18</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 19</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Film 20</p></div>
+</div>
+</div>
+
+<!-- SERIJE -->
+<div id="serije-section" class="section">
+<div class="grid">
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 1</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 2</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 3</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 4</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 5</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 6</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 7</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 8</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 9</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 10</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 11</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 12</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 13</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 14</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 15</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 16</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 17</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 18</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 19</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Serija 20</p></div>
+</div>
+</div>
+
+<!-- DOKUMENTARCI -->
+<div id="dokumentarci-section" class="section">
+<div class="grid">
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 1</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 2</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 3</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 4</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 5</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 6</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 7</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 8</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 9</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 10</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 11</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 12</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 13</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 14</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 15</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 16</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 17</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 18</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 19</p></div>
+<div class="card"><img src="https://via.placeholder.com/200x300"><p>Dokumentarac 20</p></div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
