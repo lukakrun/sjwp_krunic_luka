@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FilmoviSerije</title>
+<title>Igrice</title>
 <link rel="stylesheet" href="./zadaca3.css">
-
 <style>
 body {
     margin: 0;
     font-family: Arial;
-    background-color:#2e5b87 ;
+    background-color:#2e5b87;
     color: white;
 }
 
@@ -29,39 +28,24 @@ header {
 }
 
 /* NAV */
-nav label {
+nav a {
     margin-left: 20px;
     cursor: pointer;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-nav label:hover {
+nav a:hover {
     color: #2e64b2;
-}
-
-/* HIDE RADIO */
-input[type="radio"] {
-    display: none;
-}
-
-/* SECTIONS */
-.section {
-    display: none;
-    padding: 30px;
-}
-
-/* SHOW ACTIVE */
-#filmovi:checked ~ .content #filmovi-section,
-#serije:checked ~ .content #serije-section,
-#dokumentarci:checked ~ .content #dokumentarci-section {
-    display: block;
 }
 
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 30px;
 }
 
 .card {
@@ -70,178 +54,172 @@ input[type="radio"] {
     border-radius: 10px;
     border: 2px dashed #2e5b87;
     text-align: center;
-    height:400px;
-    
 }
 
 .card img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 8px;
-    height:400px;
-    width:300px;
 }
 </style>
-
 </head>
-<body>
 
-<!-- RADIO BUTTONS -->
-<input type="radio" name="tab" id="filmovi" checked>
-<input type="radio" name="tab" id="serije">
-<input type="radio" name="tab" id="dokumentarci">
+<body>
 
 <header>
     <div class="logo">FilmoviSerije</div>
     <nav>
-        <label for="filmovi"><a href="zadaca3.html">FILMOVI</label>
-        <label for="serije"><a href="zadaca3serije.html">SERIJE</label></a>
-        <label for="dokumentarci">DOKUMENTARCI</label>
+        <a href="zadaca3.html">FILMOVI</a>
+        <a href="zadaca3serije.html">SERIJE</a>
+        <a href="zadaca3igrice.html">IGRICE</a>
     </nav>
 </header>
 
+<div class="grid">
+
 <div class="content">
 
-<!-- FILMOVI -->
-<div id="filmovi-section" class="section">
+
   <div class="grid">
 
    <div class="card">
   <a href="https://www.imdb.com/title/tt0903747/" target="_blank">
     <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg">
-    <p>Breaking Bad</p>
+  
   </a>
 </div>
 
     <div class="card">
       <a href="https://www.imdb.com/title/tt1520211/" target="_blank">
         <img src="https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_.jpg">
-        <p>The walking dead</p>
+    
       </a>
     </div>
 
     <div class="card">
       <a href="https://www.imdb.com/title/tt1877830/?ref_=fn_t_1" target="_blank">
         <img src="https://m.media-amazon.com/images/I/71oYp0Y7bxL._AC_UF1000,1000_QL80_.jpg">
-        <p>attack on titan</p>
+      
       </a>
     </div>
 
     <div class="card">
       <a href="https://www.imdb.com/title/tt7366338/?ref_=fn_t_1" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg">
-        <p>Chernobyl</p>
+    
       </a>
     </div>
 
     <div class="card">
       <a href="https://www.imdb.com/title/tt3032476/" target="_blank">
         <img src="https://m.media-amazon.com/images/M/MV5BNDdjNTEzMjMtYjM3Mi00NzQ3LWFlNWMtZjdmYWU3ZDkzMjk1XkEyXkFqcGc@._V1_.jpg">
-        <p>Better Call Saul</p>
+      
       </a>
     </div>
 
     <div class="card">
       <a href="https://www.imdb.com/title/tt4534652/" target="_blank">
         <img src="https://m.media-amazon.com/images/I/91LjE2YWaIL._AC_UF894,1000_QL80_.jpg">
-        <p>Shameless</p>
+  
       </a>
     </div>
 
     <div class="card">
       <a href="https://www.imdb.com/title/tt2359704/" target="_blank">
         <img src="https://m.media-amazon.com/images/M/MV5BMzIyNzY4NTMtNmVhYS00OWFhLTkwMWMtOGFkNTdmNWU2ZDdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-        <p>Jojo's Bizzare Advanture</p>
+      
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0137523/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_fight" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg">
-        <p>Suits</p>
+      <a href="https://www.imdb.com/title/tt1632701/" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSczx8CGOIcC2MYrSpMa7WfoCSkOeqkNRDdggds4Eglbwszasu8YowxAEzabZdDnA-43RoGnA&s=10">
+      
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0083658/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png">
-        <p>Rookie</p>
+      <a href="https://www.imdb.com/title/tt7587890/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_rookie" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzc2MDdkZDUtZjZlYy00MGMyLWJkNzUtMTMxY2FkZjZjYmEyXkEyXkFqcGc@._V1_.jpg">
+     
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt1856101/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_blade%20runne" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlbNtH-VUeLeM-M7bcZZAm2P3CBd1d3sXIA&s">
-        <p>Malcom in The Middle</p>
+      <a href="https://www.imdb.com/title/tt0212671/" target="_blank">
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7896125_b_v8_aa.jpg">
+       
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0120737/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg">
-        <p>Friends</p>
+      <a href="https://www.imdb.com/title/tt0108778/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+     
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0167260/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Lord_Rings_Return_King.jpg">
-        <p>Big Bang Theory</p>
+      <a href="https://www.imdb.com/title/tt0898266/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BZjgzY2QyNzItNDhhYi00ZWIwLWFjN2UtZDJkN2MxYWNjMmJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+       
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%20two%20towers" target="_blank">
-        <img src="https://i5.walmartimages.com/seo/The-Lord-of-the-Rings-The-Two-Towers-One-Sheet-Wall-Poster-14-725-x-22-375-Framed_27d043a8-88fa-4b34-b955-f5f2d193e272.b26674b0611b2dcf1682b25f7b9b8240.jpeg">
-        <p>Vikings</p>
+      <a href="https://www.imdb.com/title/tt2306299/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_vikings" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BOTFmZmExYTEtYmE0Mi00MzRmLWE4ZDYtOThiNzNlOTIyODljXkEyXkFqcGc@._V1_.jpg">
+      
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt1853728/" target="_blank">
-        <img src="https://images.justwatch.com/poster/179849102/s718/django-unchained.jpg">
-        <p>Jujutsu Kaisen</p>
+      <a href="https://www.imdb.com/title/tt12343534/?ref_=fn_t_1" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjBlNTExMDAtMWZjZi00MDc5LWFkMjgtZDU0ZWQ5ODk3YWY5XkEyXkFqcGc@._V1_.jpg">
+       
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/817ZjZCTQoL._AC_UF1000,1000_QL80_.jpg">
-        <p>Squid Game</p>
+      <a href="https://www.imdb.com/title/tt10919420/?ref_=fn_t_1" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTU3ZDVhNmMtMDVlNC00MDc0LTgwNDMtYWE5MTI2ZGI4YWIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+      
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt1345836/" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFSd3IuTFVX0vxmQ4r2vlZAwJWp-T2nNUbg&s">
-        <p>Peaky blinders</p>
+      <a href="https://www.imdb.com/title/tt15574124/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_peaky%20blinders" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BNTdlNTNjNjctYTg2MC00NTFlLTliNTctODFiZjZmNWRkYTVlXkEyXkFqcGc@._V1_.jpg">
+      
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0993846/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png">
-        <p>The Mentalist</p>
+      <a href="https://www.imdb.com/title/tt1196946/?ref_=fn_t_1" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_QL75_UY281_CR11,0,190,281_.jpg">
+        <p></p>
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt1312221/?ref_=fn_t_1" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-        <p>House</p>
+      <a href="https://www.imdb.com/title/tt0412142/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_house" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjgxYjAwNmMtYTAwZC00YmQxLWJlOTMtMWM0NGJmNDE0YmI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+        <p></p>
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0102926/" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BMTc1MTk0Njg4OF5BMl5BanBnXkFtZTcwODc0ODkyNw@@._V1_FMjpg_UX1000_.jpg">
-        <p>Dexter</p>
+      <a href="https://www.imdb.com/title/tt0773262/?ref_=fn_t_1" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTVlZjNhYjktMWYyNy00MmYyLTk3ZjctMDQwMWIwYjdkODc3XkEyXkFqcGc@._V1_.jpg">
+        <p></p>
       </a>
     </div>
 
     <div class="card">
-      <a href="https://www.imdb.com/title/tt0107688/?ref_=fn_t_1" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-        <p>Death note</p>
+      <a href="https://www.imdb.com/title/tt0877057/?ref_=fn_t_1" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_.jpg">
+        <p></p>
       </a>
     </div>
 
