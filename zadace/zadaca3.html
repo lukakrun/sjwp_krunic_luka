@@ -1,241 +1,212 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Igrice</title>
-<link rel="stylesheet" href="./zadaca3.css">
-<style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background-color:#2e5b87;
-    color: white;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igrice</title>
+    <link rel="stylesheet" href="./zadaca3.css">
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #15293d;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2e5b87;
+            color: white;
+        }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-}
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #15293d;
+        }
 
-/* NAV */
-nav a {
-    margin-left: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
 
-nav a:hover {
-    color: #2e64b2;
-}
+        /* NAV */
+        nav a {
+            margin-left: 20px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 30px;
-}
+        nav a:hover {
+            color: #2e64b2;
+        }
 
-.card {
-    background: #6b6867;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px dashed #2e5b87;
-    text-align: center;
-}
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 30px;
+        }
 
-.card img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-</style>
+        .card {
+            background: #6b6867;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px dashed #2e5b87;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">FilmoviSerije</div>
-    <nav>
-        <a href="zadaca3.html">FILMOVI</a>
-        <a href="zadaca3serije.html">SERIJE</a>
-        <a href="zadaca3igrice.html">IGRICE</a>
-    </nav>
-</header>
+    <header>
+        <div class="logo">FilmoviSerije</div>
+        <nav>
+            <a href="zadaca3.html">FILMOVI</a>
+            <a href="zadaca3serije.html">SERIJE</a>
+            <a href="zadaca3igrice.html">IGRICE</a>
+        </nav>
+    </header>
 
-<div class="grid">
+    <main class="grid">
 
-<div class="content">
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/I/91vIHsL-zjL._AC_UF894,1000_QL80_.jpg" alt="Interstellar poster">
+            </a>
+        </div>
 
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt15398776/" target="_blank" rel="noopener noreferrer">
+                <img src="https://admin.itsnicethat.com/images/3CzWUmmXvOtHmdH0J1VNY-f9riA=/254910/format-webp%7Cwidth-1440/4._Oppenheimer.jpg" alt="Oppenheimer poster">
+            </a>
+        </div>
 
-  <div class="grid">
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt1877830/?ref_=fn_t_1" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/I/71kUTilIdiL.jpg" alt="The Batman poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0816692/" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/91vIHsL-zjL._AC_UF894,1000_QL80_.jpg">
-        <p></p>
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0070047/?ref_=fn_t_2" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Exorcist poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt15398776/" target="_blank">
-        <img src="https://admin.itsnicethat.com/images/3CzWUmmXvOtHmdH0J1VNY-f9riA=/254910/format-webp%7Cwidth-1440/4._Oppenheimer.jpg">
-     
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0298148/?ref_=fn_t_1" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_.jpg" alt="Shrek 2 poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt1877830/?ref_=fn_t_1" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/71kUTilIdiL.jpg">
-       
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt4633694/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/250px-Spider-Man_Into_the_Spider-Verse_poster.png" alt="Spider-Man Into the Spider-Verse poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0070047/?ref_=fn_t_2" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-       
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt9362722/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_spider%20man%20across" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BNThiZjA3MjItZGY5Ni00ZmJhLWEwN2EtOTBlYTA4Y2E0M2ZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Spider-Man Across the Spider-Verse poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0298148/?ref_=fn_t_1" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_.jpg">
-       
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0137523/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_fight" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Fight Club poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt4633694/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/250px-Spider-Man_Into_the_Spider-Verse_poster.png">
-       
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0083658/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png" alt="Blade Runner poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt9362722/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_spider%20man%20across" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BNThiZjA3MjItZGY5Ni00ZmJhLWEwN2EtOTBlYTA4Y2E0M2ZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-     
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt1856101/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_blade%20runne" target="_blank" rel="noopener noreferrer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlbNtH-VUeLeM-M7bcZZAm2P3CBd1d3sXIA&s" alt="Blade Runner 2049 poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0137523/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_fight" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0120737/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg" alt="The Lord of the Rings The Fellowship of the Ring poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0083658/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Blade_Runner_%281982_poster%29.png">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0167260/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Lord_Rings_Return_King.jpg" alt="The Lord of the Rings The Return of the King poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt1856101/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_blade%20runne" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlbNtH-VUeLeM-M7bcZZAm2P3CBd1d3sXIA&s">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%20two%20towers" target="_blank" rel="noopener noreferrer">
+                <img src="https://i5.walmartimages.com/seo/The-Lord-of-the-Rings-The-Two-Towers-One-Sheet-Wall-Poster-14-725-x-22-375-Framed_27d043a8-88fa-4b34-b955-f5f2d193e272.b26674b0611b2dcf1682b25f7b9b8240.jpeg" alt="The Lord of the Rings The Two Towers poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0120737/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt1853728/" target="_blank" rel="noopener noreferrer">
+                <img src="https://images.justwatch.com/poster/179849102/s718/django-unchained.jpg" alt="Django Unchained poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0167260/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Lord_Rings_Return_King.jpg">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt7286456/" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/I/817ZjZCTQoL._AC_UF1000,1000_QL80_.jpg" alt="Joker poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%20two%20towers" target="_blank">
-        <img src="https://i5.walmartimages.com/seo/The-Lord-of-the-Rings-The-Two-Towers-One-Sheet-Wall-Poster-14-725-x-22-375-Framed_27d043a8-88fa-4b34-b955-f5f2d193e272.b26674b0611b2dcf1682b25f7b9b8240.jpeg">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt1345836/" target="_blank" rel="noopener noreferrer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFSd3IuTFVX0vxmQ4r2vlZAwJWp-T2nNUbg&s" alt="The Dark Knight Rises poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt1853728/" target="_blank">
-        <img src="https://images.justwatch.com/poster/179849102/s718/django-unchained.jpg">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0993846/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png" alt="The Wolf of Wall Street poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/817ZjZCTQoL._AC_UF1000,1000_QL80_.jpg">
-       
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt1312221/?ref_=fn_t_1" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="This Is the End poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt1345836/" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFSd3IuTFVX0vxmQ4r2vlZAwJWp-T2nNUbg&s">
-       
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0102926/" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTc1MTk0Njg4OF5BMl5BanBnXkFtZTcwODc0ODkyNw@@._V1_FMjpg_UX1000_.jpg" alt="The Silence of the Lambs poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0993846/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png">
-      
-      </a>
-    </div>
+        <div class="card">
+            <a href="https://www.imdb.com/title/tt0107688/?ref_=fn_t_1" target="_blank" rel="noopener noreferrer">
+                <img src="https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Nightmare Before Christmas poster">
+            </a>
+        </div>
 
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt1312221/?ref_=fn_t_1" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BYzYzNDYxMTQtMTU4OS00MTdlLThhMTQtZjI4NGJmMTZmNmRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-      
-      </a>
-    </div>
-
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0102926/" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BMTc1MTk0Njg4OF5BMl5BanBnXkFtZTcwODc0ODkyNw@@._V1_FMjpg_UX1000_.jpg">
-       
-      </a>
-    </div>
-
-    <div class="card">
-      <a href="https://www.imdb.com/title/tt0107688/?ref_=fn_t_1" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
-       
-      </a>
-    </div>
-
-  </div>
-</div>
-
-
-</div>
-</div>
-
-
- 
-
-
-
-</div>
+    </main>
 
 </body>
 </html>
