@@ -1,0 +1,71 @@
+/* Base: MOBILE (≈320px) */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Blocks (colors match your diagram roughly) */
+.header {
+  background: orange;
+  padding: 20px;
+}
+
+.hero {
+  background: #cddc00; /* yellow-green */
+  padding: 40px;
+}
+
+.content {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  background: steelblue;
+  padding: 30px;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  gap: 10px;
+}
+
+.foot {
+  background: lightgray;
+  padding: 20px;
+}
+
+/* 📱 Tablet (≥768px) */
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 💻 Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* split header like image */
+  }
+
+  .content {
+    grid-template-columns: repeat(3, 1fr); /* 3 blue blocks */
+  }
+
+  .footer {
+    grid-template-columns: repeat(4, 1fr); /* 4 gray blocks */
+  }
+}
+
