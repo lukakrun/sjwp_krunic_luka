@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+
+}
+.content {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  background: steelblue;
+  padding: 200px;
+  color: white;
+}
+
+.footer {
+  
+  gap: 20px;
+  padding:20px;
+}
+
+.foot {
+  background: lightgray;
+  display:grid;
+  padding: 200px;
+}
+
+/* 📱 Tablet (≥768px) */
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+ 
+
+/* 💻 Desktop (≥1024px) */
+@media (min-width: 1024px) {
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* split header like image */
+  }
+
+  .content {
+    grid-template-columns: repeat(3, 1fr); /* 3 blue blocks */
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 gray blocks */
+  }
+}
+}
