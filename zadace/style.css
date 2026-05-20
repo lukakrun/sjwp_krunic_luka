@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+/* Hero section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Profile image */
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 5px solid #343a40;
+}
+
+/* Cards */
+.hobby-card {
+    transition: 0.3s;
+    border: none;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #e9ecef;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+    }
+}
